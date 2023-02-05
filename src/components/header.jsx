@@ -1,6 +1,8 @@
 import React from 'react';
+import '../components/css/App.css';
 
-function header ({managePageChange}) {
+
+function header ({currentPage, managePageChange}) {
     return (
     <div class="sidebar">
         <nav>
@@ -35,4 +37,4 @@ function header ({managePageChange}) {
     )
 }
 
-export default header
+export default header;
