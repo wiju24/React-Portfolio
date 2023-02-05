@@ -24,7 +24,7 @@ function container () {
         }
 
         if (currentPage === 'about') {
-            return <About-Me/>;
+            return <about/>;
         }
 
         if (currentPage === 'portfolio') {
