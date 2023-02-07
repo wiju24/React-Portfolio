@@ -1,0 +1,17 @@
+body {
+  background: url(../src/components/Assets/images/blurry-gradient-haikei.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.a {
+  color: black;
+}
+
+.mb-3{
+  color:black;
+}
+
+/* About Me card CSS for the About-Me component */
