@@ -57,30 +57,17 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Getting Started & Installation
 
-```
-
-```
-
-
-```
-
-```
-
-
-
-```
-
-```
+Simply click on the Github Pages link on the right side of the Repository
 
 ## Test
 Run: 
 ```
-
+npm run start
 ```
 
 ## Socials
 
-For details regarding the specific application, proceed to the repository:https://github.com/wiju24/Social-Network-API
+For details regarding the specific application, proceed to the repository: https://github.com/wiju24/React-Portfolio
 
 For details regarding the Github profile, click on the link: https://github.com/wiju24
 
