@@ -1,43 +1,39 @@
 import React, {useState} from 'react';
 
 // --- Importing the Main page of the Portfolio --- //
-import main from './pages/main';
+import Main from '../components/pages/main';
 
 // --- Importing the header and footer components throughout the Portfolio --- //
-import header from './header';
-import footer from './footer';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 // --- Importing the specific pages throughout the Portfolio --- //
-import about from './pages/About-Me';
-import portfolio from './pages/portfolio';
-import resume from './pages/resume';
-import socials from './pages/socials';
+import About from '../components/pages/About-Me';
+import Portfolio from '../components/pages/portfolio';
+import Resume from '../components/pages/resume';
 
 // --- Rendering the pages and returning current pages --- //
 
-function container () {
-    const [currentPage, setCurrentPage] = useState('main');
+function Container () {
+    const [currentPage, setCurrentPage] = useState('Main');
 
     const renderMain = () => {
-        if (currentPage === 'main') {
-            return <main/>;
+        if (currentPage === 'Main') {
+            return <Main />;
         }
 
-        if (currentPage === 'about') {
-            return <about/>;
+        if (currentPage === 'About') {
+            return <About />;
         }
 
-        if (currentPage === 'portfolio') {
-            return <portfolio/>;
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
         }
 
-        if (currentPage === 'resume') {
-            return <resume/>;
+        if (currentPage === 'Resume') {
+            return <Resume />;
         }
 
-        if (currentPage === 'socials') {
-            return <socials/>;
-        }
     }
 
     const managePageChange = (page) => setCurrentPage(page);
@@ -45,7 +41,7 @@ function container () {
     return (
         <div class= "App">
             <div>
-                <header currentPage={currentPage} managePageChange={managePageChange}/>
+                <Header currentPage={currentPage} managePageChange={managePageChange} />
             </div>
 
             <div>
@@ -53,10 +49,10 @@ function container () {
             </div>
 
             <div>
-                <footer/>
+                <Footer />
             </div>
         </div>
     )
 }
 
-export default container;
+export default Container;
